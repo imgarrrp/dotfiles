@@ -28,3 +28,5 @@ if (Get-Variable -Name PSStyle -ErrorAction Ignore) {
 # ================================================================================
 
 $chezmoi = chezmoi source-path
+$ahk = "$HOME\.config\autohotkey\main.ahk"
+$ahkd = "$HOME\.config\autohotkey"
