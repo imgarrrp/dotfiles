@@ -27,4 +27,4 @@ if (Get-Variable -Name PSStyle -ErrorAction Ignore) {
 # - Variables, Aliases, Functions
 # ================================================================================
 
-
+$chezmoi = chezmoi source-path
