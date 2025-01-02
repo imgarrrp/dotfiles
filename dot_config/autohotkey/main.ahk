@@ -13,8 +13,8 @@ GroupAdd "Terminals", "ahk_exe powershell.exe"
 GroupAdd "Browsers", "ahk_exe chrome.exe"
 GroupAdd "Browsers", "ahk_exe mullvadbrowser.exe"
 GroupAdd "Browsers", "ahk_exe msedge.exe"
-GroupAdd "Obsidian", "ahk_exe Obsidian.exe"
 GroupAdd "Filer", "ahk_exe explorer.exe ahk_class CabinetWClass"
+GroupAdd "Obsidian", "ahk_exe Obsidian.exe"
 
 ; ================================================================================
 ; - Browsers
