@@ -1,0 +1,11 @@
+[user]
+name = garrrp
+email = 193384261+imgarrrp@users.noreply.github.com
+
+[core]
+autocrlf = input
+safecrlf = false
+quotepath = false
+
+[init]
+defaultbranch = main
