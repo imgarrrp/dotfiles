@@ -25,7 +25,7 @@ $ahk = "$HOME\.config\autohotkey\main.ahk"
 
 function mcd {
 	param(
-		[string]$Path
+		[String]$Path
 	)
 
 	if (!($Path)) {
