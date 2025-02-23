@@ -21,3 +21,4 @@ if (Get-Variable -Name PSStyle -ErrorAction Ignore) {
 
 $config = "$HOME\.config"
 $nvim = "$HOME\.config\nvim\init.lua"
+$ahk = "$HOME\.config\autohotkey\main.ahk"
