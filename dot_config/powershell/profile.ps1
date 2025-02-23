@@ -22,3 +22,31 @@ if (Get-Variable -Name PSStyle -ErrorAction Ignore) {
 $config = "$HOME\.config"
 $nvim = "$HOME\.config\nvim\init.lua"
 $ahk = "$HOME\.config\autohotkey\main.ahk"
+
+function mcd {
+	param(
+		[string]$Path
+	)
+
+	if (!($Path)) {
+		Set-Location -Path $HOME
+		return
+	}
+
+	if (Test-Path -Path $Path -PathType Container) {
+		Set-Location -Path $Path
+		return
+	}
+
+	if (Test-Path -Path $Path -PathType Leaf) {
+		$Parent = (Get-Item -Path $Path).DirectoryName
+
+		if ($Parent -and (Test-Path -Path $Parent -PathType Container)) {
+			Set-Location -Path $Parent
+		}
+
+		return
+	}
+
+	Set-Location -Path $Path
+}
