@@ -3,6 +3,8 @@
 InstallKeybdHook
 SetKeyDelay 0
 
+#Include ime.ahk
+
 GroupAdd "Terminals", "ahk_exe WindowsTerminal.exe"
 GroupAdd "Terminals", "ahk_exe pwsh.exe"
 GroupAdd "Terminals", "ahk_exe powershell.exe"

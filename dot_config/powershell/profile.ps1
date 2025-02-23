@@ -20,3 +20,4 @@ if (Get-Variable -Name PSStyle -ErrorAction Ignore) {
 # ================================================================================
 
 $config = "$HOME\.config"
+$nvim = "$HOME\.config\nvim\init.lua"
