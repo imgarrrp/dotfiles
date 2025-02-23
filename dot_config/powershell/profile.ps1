@@ -23,7 +23,7 @@ $config = "$HOME\.config"
 $nvim = "$HOME\.config\nvim\init.lua"
 $ahk = "$HOME\.config\autohotkey\main.ahk"
 
-function mcd {
+function mycd {
 	param(
 		[String]$Path
 	)
@@ -50,3 +50,5 @@ function mcd {
 
 	Set-Location -Path $Path
 }
+Remove-Item -Path Alias:cd
+Set-Alias -Name cd -Value mycd
