@@ -1,0 +1,10 @@
+[user]
+	name = imgarrrp
+	email = 193384261+imgarrrp@users.noreply.github.com
+
+[core]
+	autocrlf = true
+	quotepath = false
+
+[init]
+	defaultBranch = main
